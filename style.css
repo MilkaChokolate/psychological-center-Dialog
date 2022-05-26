@@ -1,0 +1,260 @@
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px ;
+}
+
+
+.wrapper {
+    display: flex;
+    overflow-y: hidden;
+    width: 400%;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.fixedBar {
+    position: fixed;
+    width: 100%;
+    background: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.fixedNav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    float: right;
+    background: black;
+    color: white;
+}
+
+.buttonBar {
+    display: flex;
+    justify-content: center;
+}
+.buttonNav{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: auto;
+}
+.buttonNav a {
+    width: 330px;
+}
+
+#menu {
+    cursor: pointer;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 0 12px white;
+    -moz-box-shadow: 0 0 12px white;
+    -o-box-shadow: 0 0 12px white;
+    -webkit-box-shadow: 0 0 12px white;
+    border: 1px solid white;
+    border-radius: 4px;
+    outline: 1px solid white;
+    padding: 5px 7px 5px 7px;
+    transition: 0.4s linear;
+    margin: 20px;
+    color: black;
+    background-color: #BBBBBB;
+}
+
+
+a, a:visited {
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: inset 0px 0px 50px rgb(30 30 30 / 14%), inset 0px 0px 50px rgb(30 30 30 / 14%);
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(30,30,30,0.3);
+    transition: 0.4s linear;
+    margin: 20px;
+}
+a p, a:visited p {
+    text-decoration: none;
+    margin: 5px 19px 5px 10px;
+    padding: 5px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #BBBBBB;
+}
+
+#main {
+    background: url("image/back original_black.jpg");
+    background-repeat: no-repeat;
+    letter-spacing: 3px;
+    width: 100%;
+    overflow-y: auto;
+    min-height: 100vh;
+    max-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+#main h1 {
+    text-shadow: 0px 0px 40px rgb(30 30 30 / 80%), 0px 0px 40px rgb(30 30 30 / 80%);
+    box-shadow: none;
+}
+
+
+#ourDoctors, #appointment, #location {
+
+    overflow-x: hidden;
+    width: 100%;
+    overflow-y: auto;
+    min-height: 100vh;
+    max-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#ourDoctors {
+    flex-wrap: wrap;
+}
+
+.doctor {
+    max-width: 400px;
+    height: fit-content;
+    min-height: 560px;
+    margin: 25px;
+    border: white 1px solid;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+#ourDoctors, #appointment, #location {
+    background: black;
+}
+
+#doctors, form, #main-ul-block, iframe {
+    margin-top: 200px;
+}
+
+#doctors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#location {
+    background: url("image/back derevo.jpg");
+    background-repeat: no-repeat;
+}
+
+.help {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 15px;
+}
+
+form {
+    height: fit-content;
+    border: white 1px solid;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.active {
+    cursor: pointer;
+    color: black !important;
+    background-color: #BBBBBB !important;
+}
+
+
+textarea {
+    width: 90%;
+    resize: vertical;
+    border-radius:10px;
+    border: 1px white solid;
+    height:150px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    background-color: black;
+}
+
+select {
+    background: black;
+    color: white;
+    width: 320px;
+    border: 1px white solid;
+    padding:10px;
+    border-radius:10px;
+}
+
+form input {
+    display:block;
+    width: 300px;
+    margin:10px 0;
+    padding:10px;
+}
+.type-1 {
+    border-radius:10px;
+    border: 1px solid #eee;
+    color: white;
+    background: black;
+    transition: .3s border-color;
+}
+.type-1:hover {
+    border: 1px solid white;
+}
+
+label {
+    display: block;
+    margin: 10px 5px 10px 5px;
+}
+
+form button {
+    display: block;
+    border: 1px white solid;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    background-color: #BBBBBB;
+    box-shadow: inset 0px 0px 50px rgb(30 30 30 / 14%), inset 0px 0px 50px rgb(30 30 30 / 14%);
+    font-weight: 300;
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    float: right;
+    margin: 20px;
+}
+
+
+@media (max-width: 1199px) {
+    .fixedBar {
+        display: none;
+    }
+    .fixedNav {
+        display: block;
+    }
+    form{
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 650px) {
+    iframe {
+        max-width: 350px;
+        max-height: 350px;
+    }
+}
