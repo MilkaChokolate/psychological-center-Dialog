@@ -43,3 +43,8 @@
   src="/markdownImg/dialogue-menu.png"
   alt="Страница с кнопкой меню"
   caption="Страница с кнопкой меню на смартфоне">
+  
+  ## Project setup
+```
+git clone https://github.com/MilkaChokolate/psychological-center-Dialog
+```
