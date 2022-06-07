@@ -11,7 +11,6 @@ body {
     letter-spacing: 3px ;
 }
 
-
 .wrapper {
     display: flex;
     overflow-y: hidden;
@@ -30,12 +29,15 @@ body {
 }
 
 .fixedNav {
+    padding: 10px;
     display: none;
     position: fixed;
     width: 100%;
+    max-height: 20vh;
     float: right;
     background: black;
     color: white;
+    font-size: 70%;
 }
 
 .buttonBar {
@@ -47,6 +49,7 @@ body {
     flex-direction: column;
     align-items:flex-start;
     width: auto;
+    background: black;
 }
 .buttonNav a {
     width: 330px;
@@ -54,7 +57,7 @@ body {
 
 #menu {
     cursor: pointer;
-    font-size: 28px;
+    font-size: 18px;
     text-decoration: none;
     box-shadow: 0 0 12px white;
     -moz-box-shadow: 0 0 12px white;
@@ -65,7 +68,7 @@ body {
     outline: 1px solid white;
     padding: 5px 7px 5px 7px;
     transition: 0.4s linear;
-    margin: 20px;
+    margin: 0 5px 0 5px;
     color: black;
     background-color: #BBBBBB;
 }
@@ -97,6 +100,7 @@ a:hover {
 #main {
     background: url("image/back original_black.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     letter-spacing: 3px;
     width: 100%;
     overflow-y: auto;
@@ -248,7 +252,7 @@ form button {
         display: block;
     }
     form{
-        margin-top: 150px;
+        margin: 150px 10px 10px 10px;
     }
 }
 
