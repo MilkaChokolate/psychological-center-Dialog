@@ -55,7 +55,7 @@
   caption="Страница с кнопкой меню на смартфоне">
 Страница с кнопкой меню на смартфоне
   
-  ## Project setup
+## Project setup
 ```
 git clone https://github.com/MilkaChokolate/psychological-center-Dialog
 ```
